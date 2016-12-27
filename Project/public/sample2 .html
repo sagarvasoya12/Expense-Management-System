@@ -1,0 +1,116 @@
+<html>
+<head>
+	<title>sample</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+	<script>
+	$(document).ready(function(){
+		var today = new Date();
+			var info1 =  sessionStorage.getItem("infor1");
+			var info2 =  sessionStorage.getItem("infor2");
+			var info3 =  sessionStorage.getItem("infor3");
+			$("#voucher_id").text(info1);
+			$("#voucher_uname").val(info2);
+			$("#voucher_amount").text(info3);
+			$("#voucher_date").text(today.toLocaleDateString());
+		});
+	function prints(){
+		$("#printbutton").hide();
+		$("#main").css("width","100%");
+		window.print();
+	}
+	</script>
+	<style>
+	tr{
+		width: 100%;
+	}
+	td{
+		width: 33.33%;
+		color: brown;
+		text-align: center;
+		margin: 5px;
+	}
+	body{
+  -webkit-print-color-adjust:exact;
+  font-family: sans-serif;
+  
+}
+	input{
+		width: 100%;
+		text-align: left;
+		height: 20px;
+	}
+	img{
+		width: 80%;
+		height: auto;
+	}
+	table{
+		background : linear-gradient(gold,white,white);
+		font-weight: bold;
+	}
+	</style>
+	<body>
+		
+		<table id="main" style="width:50%;">
+			<tr>
+				<td style="text-align:left;"> <img src="wtlogo.png"></img></td>
+				<td><h1>Voucher</h1></td>
+				<td style="text-align:right;">
+					<table style="background:none;">
+						<tr>
+							<td style="text-align:left;"><label>No.: </label></td>
+							<td style="text-align:left;"><label id="voucher_id"></label></td>
+						</tr>
+						<tr>
+							<td style="text-align:left;"><label>Date : </label></td>
+							<td style="text-align:left;"><label id="voucher_date"></label></td>
+						</tr>
+						<tr>
+							<td style="text-align:left;"><label>Rupees : </label></td>
+							<td style="text-align:left;"><label id="voucher_amount">10000</label></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1">Pay To</td>
+				<td colspan="2" ><input type="text" id="voucher_uname" style="border:none;border-bottom : 1px solid goldenrod;"></td>
+			</tr>
+			<tr>
+				<td colspan="1">Rs. in words</td>
+				<td colspan="2"><input type="text" style="border:none;border-bottom : 1px solid goldenrod;"></td>
+			</tr>
+			<tr>
+				<td colspan="1">Being</td>
+				<td colspan="2"><input type="text" style="border:none;border-bottom : 1px solid goldenrod;"></td>
+			</tr>
+			<tr>
+				<td colspan="1">and Debit</td>
+				<td colspan="2"><input type="text" style="border:none;border-bottom : 1px solid goldenrod;"></td>
+			</tr>
+			<tr>
+				<td colspan="1">Paid By</td>
+				<td colspan="2"><input type="text" style="border:none;border-bottom : 1px solid goldenrod;"></td>
+				
+			</tr>
+			<tr>
+				<td colspan="1">Received above sum of Rs.</td>
+				<td colspan="2"><input type="text" style="border:none;border-bottom : 1px solid goldenrod;"></td>
+			</tr>
+			<tr>
+				<td colspan="1">Authorized By</td>
+				<td colspan="2"><input type="text" style="border:none;border-bottom : 1px solid goldenrod;"></td>
+				
+			</tr>
+			<tr>
+				<td colspan="3" style="text-align:left;font-weight:normal;font-size:10px;">This is a system generated Voucher hence signature not required.</td>
+			</tr>
+			<tr>
+				<td colspan="2"></td>
+				<td colspan="1"><input type="button" id="printbutton" value="print" onclick="prints()"></td>
+			</tr>
+
+
+		</table>
+	</body>
+</html>x

@@ -1,0 +1,1079 @@
+    <!DOCTYPE html>
+    <html lang="en" >
+    <head>
+      <!--<script >
+      var infor1 =  sessionStorage.getItem("infor1");
+
+      if(infor1==null)
+      {
+
+        window.location.href = "http://localhost:3000/";
+
+      }
+      </script>-->
+      <title><%= title1 %></title>
+      <link rel="shortcut icon" href="http://www.wishtreetech.com/wp-content/uploads/2015/06/favicon-32x32.png">
+      <link rel="apple-touch-icon-precomposed" href="http://www.wishtreetech.com/wp-content/uploads/2015/06/apple-icon-57x571.png">
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://www.wishtreetech.com/wp-content/uploads/2015/06/apple-icon-76x76.png">
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://www.wishtreetech.com/wp-content/uploads/2015/06/apple-icon-120x120.png">
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta name="google-signin-client_id" content="870750380536-i202cjqc1v7hhskd6lpn0d2hkpg452af.apps.googleusercontent.com">
+
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  
+
+<!-- <link rel="stylesheet" type="text/css" href="http://www.datatables.net/release-datatables/extensions/Plugins/integration/bootstrap/3/dataTables.bootstrap.css">
+-->
+<!-- <link rel="stylesheet" type="text/css" href="/Externals/bootstrap.min.css">-->
+<link rel="stylesheet" href="/stylesheets/StyleSheet.css" type="text/css"/>  
+<link rel="stylesheet" type="text/css" href="/Externals/dataTables.bootstrap.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.1.2/css/buttons.dataTables.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://www.datatables.net/release-datatables/extensions/TableTools/css/dataTables.tableTools.css"> 
+
+
+
+
+<script src="/Externals/jquery.min.js" ></script> 
+<script src="/Externals/bootstrap.min.js" ></script>
+<script src="/Externals/angular.min.js" ></script>
+<script src="/Externals/platform.js" ></script>
+<script src="/Externals/jquery.dataTables.js" ></script>
+<script src="/Externals/dataTables.tableTools.js" ></script>
+<script src="/Externals/dataTables.bootstrap.js" ></script>
+<script src="/Externals/jquery.cookie.js" ></script>  
+
+
+
+
+
+
+<!--
+
+<script type="text/javascript" src="https://www.datatables.net/release-datatables/media/js/jquery.js"></script>
+<script type="text/javascript" src="https://www.datatables.net/release-datatables/media/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="https://www.datatables.net/release-datatables/extensions/TableTools/js/dataTables.tableTools.js"></script>
+
+-->
+
+
+
+
+
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js"></script>
+<!--
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.flash.min.js"></script>-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script> 
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.html5.min.js"></script> 
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.1.2/js/buttons.bootstrap.min.js"></script> 
+  <script type="text/javascript" src="https://www.datatables.net/release-datatables/extensions/TableTools/js/dataTables.tableTools.js"></script>  
+
+<!-- from net
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script> 
+     
+
+ 
+       <script src="https://apis.google.com/js/platform.js" async defer></script>
+ 
+   <script src="http://www.datatables.net/release-datatables/media/js/jquery.dataTables.js"></script>
+   <script src="http://www.datatables.net/release-datatables/extensions/TableTools/js/dataTables.tableTools.js"></script>
+   <script src="http://www.datatables.net/release-datatables/extensions/Plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+ 
+
+   <script type = "text/javascript" src = "http://cdn.jsdelivr.net/jquery.cookie/1.3.1/jquery.cookie.js"></script>  -->
+
+
+   <script src="/javascripts/MyModule/bootstrap.js"></script>
+   <script src="/javascripts/MyModule/Controller.js"></script> 
+   <script src="/javascripts/MyModule/reportController.js"></script>
+   <script src="/javascripts/MyModule/expController.js"></script> 
+   <script src="/javascripts/MyModule/voucherController.js"></script>
+   <script src="/javascripts/MyModule/analysisController.js"></script>  
+   <script src="/javascripts/MyModule/cashController.js"></script> 
+
+
+
+   <script src="/javascripts/Javascript_Home.js"></script>  
+   
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" ></script>
+<!--
+<script src = "http://cdn.zingchart.com/zingchart.min.js" ></script>
+
+<script src = "http://cdn.zingchart.com/angular/zingchart-angularjs.js" ></script>
+
+-->
+ <script src="https://code.highcharts.com/highcharts.js"></script>
+
+   <script type="text/javascript">
+
+/*  $(document).ready(function(){
+    
+      var infor1 =  sessionStorage.getItem("infor1");
+    
+      if(infor1==null)
+      {
+
+        window.location.href = "http://localhost:3000/";
+
+      }
+    }); */
+    function signout()
+    {
+
+     var infor2= sessionStorage.removeItem("infor1");
+
+
+     var auth2 = gapi.auth2.getAuthInstance();
+     auth2.signOut().then(function () {
+
+     });
+
+     window.location.href  = "http://localhost:3000/";
+   }
+   function onLoad() {
+    gapi.load('auth2', function() {
+      gapi.auth2.init();
+    });
+  }
+  </script> 
+</head>
+<body>
+ <div class="container-fluid" ng-app="myApp" >
+  <div class="row first">
+    <div class="col-sm-2 first_row_column">
+      <img class="img-responsive" src="/images/wtlogo.png" alt="Wishtree Logo" />
+    </div>
+    <div class="col-sm-8 first_row_column">
+      <h1 align="center" >Wishtree Technologies</h1>
+    </div>
+    <div class="col-sm-2 first_row_column"> 
+      <div class="dropdown profile_column">
+        <button class="btn dropdown-toggle" id="profile_button" type="button" data-toggle="dropdown">
+          <span id = "lblData"></span>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#" onclick="signout();">Logout</a></li>
+        </ul>
+      </div>
+    </div>  
+  </div>
+
+  <div class="row second">
+    <div class="col-sm-2 vertical-nav" >
+      <ul class="nav nav-tabs nav-stacked head" id="myTab">
+        <li role="presentation" class="active" ><a href="#Dashboard" data-toggle="tab" >Dashboard</a></li>
+        <li role="presentation" ><a href="#Reports" data-toggle="tab" >Reports</a></li>
+        <li  role="presentation" ><a href="#Expenses" data-toggle="tab">Expense</a></li>
+        <li role="presentation"><a href="#Vouchers" data-toggle="tab" >Vouchers</a></li>
+        <li role="presentation"><a href="#Analysis"  data-toggle="tab" >Analysis</a></li>
+        <li role="presentation" id="cash"><a href="#Cash" data-toggle="tab" >Cash Counter</a></li>
+
+      </ul>
+    </div>
+    <div class="col-sm-10" id="display" >
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 id="Title_tab"></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 tab-content">
+
+          <div class="tab-pane fade in active" id="Dashboard"  ng-controller="myCtrl"  >
+           
+             <div class="form-group row">
+              <div class="col-sm-3">
+                          <label for="chart_year">Select Year</label>
+                          <select class="form-control" id="chart_year" ng-model="year" ng-change="chart_exp_year(year)">
+                            <option>2016</option>
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>      
+                          </select>
+                        </div>
+                      </div>
+             <div id="container">Placeholder for chart</div>
+              <div class="row">
+              <div class="col-sm-12">
+                <h4 id="recent_report"><b>Recent Reports</b></h4>
+              </div>
+            </div> 
+            <div class="row" >
+              <table class="table table-striped table-bordered dt-responsive nowrap"  id="tb2" width="100%">
+        
+              </table>
+            </div>
+    <!--       <zingchart id = "myChart" zc-json = "myJson" zc-height = 500 zc-width = 1000 ></zingchart> -->
+
+        <!--    <div class="row">
+              <table class="table table-hover table-responsive col-sm-12" id="example1">
+                <thead>
+                  <tr>
+                    <th>Employee name</th>
+                    <th>Report</th>
+                    <th>Reason</th>
+                    <th>Rupees</th>
+                    <th>Date</th>
+                    <th>Reimbursement</th>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr ng-repeat="e in exp">
+                    <td>
+                      {{e.Username}}
+                    </td>
+                    <td>
+                      {{e.Report}}
+                    </td>
+                    <td>
+                      {{e.Category}}
+                    </td>
+                    <td>
+                      {{e.Amount}}
+                    </td>
+                    <td>
+                      {{e.Date| date: 'dd-MM-yyyy'}}
+                    </td>
+                    <td>
+                      {{e.status}}
+                    </td>
+                  </tr>
+                </tbody> 
+              </table>
+            </div> -->
+          </div>
+
+
+
+
+
+
+          <div class="tab-pane fade " id="Reports"  ng-controller="addmodelCtrl" >
+           <div class="row" >
+            <div class="col-sm-12 add_div">
+              <button  class="btn btn-default btn-hover add" id="addreport" ng-click="fill_report()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Report</button>
+
+              <div class="modal fade" id="Report" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                <div class="modal-dialog" role="document" >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel1">Add Report</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form role="form" id="Report_form">
+                        <span id="report_form_span" style="color:red;">Fields with * are mandatory</span>
+                        <div class="form-group">
+                          <label for="unameinput_rep">Employee name<sup style="color:red;">*</sup></label>
+                          <select class="form-control" id="unameinput_rep" ng-model='report.UserName'>
+                            <option>- Select Employee name -</option>
+
+                            <option ng-repeat='emp in employname'>{{emp.emp_name}}</option>
+
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="reptitleinput_rep">Report Title<sup style="color:red;">*</sup></label>
+                          <input type="text" class="form-control" id="reptitleinput_rep" placeholder="Maximum 20 characters" ng-model='report.ReportTittle'>
+                        </div>
+                        <div class="form-group">
+                          <label for="purpose_rep">Purpose</label>
+                          <textarea class="form-control" id="purpose_rep" placeholder="Maximum 100 characters" row="3" ng-model='report.BussinessPurpose'></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="startdateinput_rep">Start Date<sup style="color:red;">*</sup></label>
+                          <input type="date" class="form-control" id="startdateinput_rep" ng-model='report.StartDate'>
+                        </div>
+                        <div class="form-group">
+                          <label for="enddateinput_rep">End Date<sup style="color:red;">*</sup></label>
+                          <input type="date" class="form-control" id="enddateinput_rep" ng-model='report.EndDate'>
+                        </div>
+                        <div style="text-align:center;">
+                          <button type="submit" class="btn btn-success" id="submit_rep" ng-click='addreport()' >Submit</button>
+                          <button class="btn btn-danger" id="Cancel_rep" data-dismiss="modal">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row"> 
+            <table class="table table-striped table-bordered dt-responsive nowrap" width="100%" id="tb3">
+              <!--  <thead>
+                  <tr >
+                    <th>Employee Name</th>
+                    <th>Report Tittle</th>
+                    <th>Bussiness Purpose</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Total Exp.</th>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr ng-repeat="r in reports">
+                    <td >
+                      {{r.UserName}}
+                    </td>
+                    <td>
+                      {{r.ReportTittle}}
+                    </td>
+                    <td >
+                      {{r.BussinessPurpose}}
+                    </td>
+                    <td>
+                      {{r.StartDate| date: 'dd-MM-yyyy'}}
+                    </td>
+                    <td>
+                      {{r.EndDate| date: 'dd-MM-yyyy'}}
+                    </td>
+                    <td>
+                      {{r.total}}
+                    </span></td>
+                  </tr> 
+
+                </tbody> --> 
+              </table>
+            </div>
+          </div>
+
+
+
+
+          <div class="tab-pane fade" id="Expenses"  ng-controller="addexpCtrl" >
+           <div class="row" >
+            <div class="col-sm-12 add_div" >
+              <button  class="btn btn-default btn-hover add" id="addexpense"  ><a href="#add_expense_tab" data-toggle="tab" ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Expense</a>
+              </button>
+
+
+
+            </div>
+
+          </div>  
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="alert alert-success alert-dismissible" role="alert" id="approve_alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                Approved successfully
+              </div>
+
+
+              <div class="alert alert-warning alert-dismissible" role="alert" id="reject_alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                Rejected successfully
+              </div>
+
+              <div class="alert alert-danger alert-dismissible" role="alert" id="delete_alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                Deleted successfully
+              </div>
+
+            </div>
+           
+          </div>
+          <div class="row" >
+            <div class="col-sm-12 add_div" >
+
+              <button type='button' class='btn btn-success' id="approve" ng-click="approve_exp()">Approve</button>
+              <button type='button' class='btn btn-warning' id="reject" ng-click="reject_exp()">Reject</button>
+              <button type='button' class='btn btn-danger' id="delete_confirmation_expense" ng-click="check_item()">Delete</button>
+
+
+              <div class="modal fade" tabindex="-1" role="dialog" id="blank_modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Alert</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>You have to select at least one item </p>
+                    </div>
+                    <div class="modal-footer">
+
+                      <button type="button" class="btn btn-warning"  id="closemodal" data-dismiss="modal">ok</button>
+
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div>
+
+
+
+              <div class="modal fade" tabindex="-1" role="dialog" id="Approved_edit_modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Alert</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>You can not Edit/Delete Approved Expense </p>
+                    </div>
+                    <div class="modal-footer">
+
+                      <button type="button" class="btn btn-warning" onclick="javascript:window.location.reload()" id="closemodal" data-dismiss="modal">ok</button>
+
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div>
+              <div class="modal fade" tabindex="-1" role="dialog" id="confirmation_delete_modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title">Confirmation</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Are you sure that you want to delete this expense?</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" ng-click="delete_exp()">Yes</button>
+                      <button type="button" class="btn btn-warning" data-dismiss="modal">No</button>
+
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div>
+            </div>
+          </div>
+          <div class="row"> 
+            <table class="table table-striped table-bordered dt-responsive nowrap" id="tb1" cellpadding="1" cellspacing="1" width="100%">
+              <thead>
+                <tr>
+                  <th >
+                    <input type="checkbox"  id="check_all" value="" ng-click="select_all()" style="position: relative; left: 50%;right: 50%;" >  
+                  </th>
+                  <th>Employee name</th>
+                  <th>Report</th>
+                  <th>Category</th>
+                  <th>Rupees</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Attachment</th>
+                  <th></th>
+                </tr>
+              </thead>
+
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="add_expense_tab" ng-controller="addexpCtrl2">
+          <div class="row">
+            <div class="col-sm-12">
+
+              <form role="form" class="form-horizontal" id="Expense_form" >
+
+
+                <span id="expense_form_span" style="color:red;">    Fields with * are mandatory</span>
+              </br>
+              <div class="form-group">
+                <label for="unameinput_exp" class="col-sm-3 control-label">Employee name<sup style="color:red;">*</sup></label>
+                <div class="col-sm-3">
+                  <select class="form-control" id="unameinput_exp" ng-model='exp.Username' ng-change="fill_exp(exp.Username)">
+                    <option>- Select Employee name -</option>
+                    <option ng-repeat='emp in employname'>{{emp.emp_name}}</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="reportinput_exp" class="col-sm-3 control-label">Report<sup style="color:red;">*</sup></label>
+                <div class="col-sm-3">
+                  <select class="form-control" id="reportinput_exp" ng-model='exp.Report' >
+                    <option>- Select Report -</option>
+                    <option ng-repeat='r in reports' >{{r.ReportTittle}}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="dateinput_exp" class="col-sm-3 control-label">Date<sup style="color:red;">*</sup></label>
+                <div class="col-sm-3">
+                  <input type="Date" class="form-control" id="dateinput_exp" ng-model='exp.Date'>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="categoryinput_exp" class="col-sm-3 control-label">Category<sup style="color:red;">*</sup></label>
+                <div class="col-sm-3">
+                  <select class="form-control" id="categoryinput_exp" ng-model='exp.Category'>
+                    <option>- Select Category -</option>
+                    <option>Air Travel Expense</option>
+                    <option>Automobile Travel Expense</option>
+                    <option>Lodging Expense</option>
+                    <option>Food Expense</option>
+                    <option>Mobile Expense</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group" id="other_div" style="display:none;">
+                <label for="other_category_exp" class="col-sm-3 control-label">Detail :</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="other_category_exp" ng-model='exp.Cat_other_dateil '>
+                </div>
+              </div>
+              <div class="form-group" id="food_div" style="display:none;">
+                <label for="person_number_exp" class="col-sm-3 control-label">No. of Persons</label>
+                <div class="col-sm-3">
+                  <input type="Number" class="form-control" id="person_number_exp" ng-model='exp.no_of_person '>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="amountinput_exp" class="col-sm-3 control-label">Amount<sup style="color:red;">*</sup></label>
+                <div class="col-sm-3">
+                  <input type="Number" class="form-control" id="amountinput_exp" placeholder="INR" ng-model='exp.Amount'>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-3">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="bill_checkbox"> Receipt of bill
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class="form-group" id="attached_file_form" style="display:none;">
+                <label for="receiptinput_exp" class="col-sm-3 control-label">File input</label>
+                <div class="col-sm-3">
+                  <input type="file" id="receiptinput_exp"  file-model="myFile"> 
+                  <p class="help-block">.pdf,.img,.png etc.</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-3">
+                  <button type="submit" class="btn btn-success" id="update_exp"  ng-click='updateexp()'>Update</button>
+                  <button type="submit" class="btn btn-success" id="submit_exp"  ng-click='addexp()'>Submit</button>
+                  <button type="submit" class="btn btn-danger" id="cancel_exp" data-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>     
+      <div class="tab-pane fade" id="Vouchers" ng-controller="voucherCtrl">
+        <div class="row">
+         <div class="col-sm-12 add_div">
+          <!--<button  class="btn btn-default btn-hover add" id="requestvoucher" ng-click="load_empname()"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Request Voucher</button>-->
+
+          
+          <div class="modal fade" id="Voucher" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel3">Request Voucher</h4>
+                </div>
+                <div class="modal-body">
+                  <form role="form" id="Voucher_form">
+                    <span id="voucher_form_span" style="color:red;">Fields with * are mandatory</span>
+                    <br/>
+                    <div class="form-group">
+                      <label for="unameinput_vou">Employee name<sup style="color:red;">*</sup></label>
+                      <select class="form-control" id="unameinput_vou" ng-model="voucher.Username">
+                        <option>- Select Employee name -</option>
+                        <option ng-repeat='emp in employname'>{{emp.emp_name}}</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="voutitleinput_vou">Subject<sup style="color:red;">*</sup></label>
+                      <input type="text" class="form-control" id="voutitleinput_vou" placeholder="Maximum 20 characters" maxlength="20" ng-model="voucher.subject">
+                    </div>
+                    <div class="form-group">
+                      <label for="purpose_rep">Description</label>
+                      <textarea class="form-control" id="description_vou" placeholder="Maximum 100 characters" row="3" ng-model='voucher.BussinessPurpose'></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="dateinput_vou" >Date<sup style="color:red;">*</sup></label>
+                      <input type="date" class="form-control" id="dateinput_vou" ng-model="voucher.date">
+                    </div>
+                    <div class="form-group">
+                      <label for="amountinput_vou" >Amount<sup style="color:red;">*</sup></label>
+                      <input type="Number" class="form-control" id="amountinput_vou" placeholder="INR" ng-model="voucher.amount">
+                    </div>
+                    <button type="submit" class="btn btn-default" id="submit_vou" ng-click="voucher_submit()">Submit</button>
+                    <button type="submit" class="btn btn-default" id="cancel_vou" data-dismiss="modal">Cancel</button>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row table-responsive">
+        <table class="table table-striped table-bordered dt-responsive nowrap" id="example3" width="100%">
+
+        </table>
+      </div>
+      
+    </div>
+    <div class="tab-pane fade" id="Analysis" ng-controller="analysisCtrl">
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="nav nav-tabs">
+            <li class="inner" role="presentation"><a href="#navigation1"  class="analysis1" data-toggle="tab">Month / Year wise</a></li>
+            <li class="inner" role="presentation"><a href="#navigation2"  class="analysis1" data-toggle="tab">Date wise</a></li>
+            <li class="inner" role="presentation"><a href="#navigation3"  class="analysis1" data-toggle="tab">Total Reimbursement</a></li>
+            <li class="inner" role="presentation"><a href="#navigation4"  class="analysis1" data-toggle="tab">Category wise</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 tab-content" id="display2" >
+          <div class="tab-pane fade" id="navigation1">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <span id="navigation1_form_span" style="color:red;">*Fields are mandatory</span>
+                <label for="unameinput_navigation1" class="col-sm-3 control-label">Employee name<sup style="color:red;">*</sup></label>
+                <div class="col-sm-3">
+                  <select class="form-control" id="unameinput_navigation1" ng-model="emp_name">
+                    <option>- Select Employee -</option>
+                    <option>All</option>
+                    <option ng-repeat='emp in employname'>{{emp.emp_name}}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="monthinput_navigaion1" class="col-sm-3 control-label">Month</label>
+                <div class="col-sm-3">
+                  <select class="form-control" id="monthinput_navigation1" ng-model="monthly">
+                    <option>- Select Month -</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="yearinput_navigation1" class="col-sm-3 control-label">Year</label>
+                <div class="col-sm-3">
+                  <select class="form-control" id="yearinput_navigation1" required="true" ng-model="yearly">
+                    <option>- Select Year -</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-3">
+                  <button type="submit" class="btn btn-default" id="submit_navigation1" ng-click="year()">Submit</button>
+                </div>
+              </div>
+            </form>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered dt-responsive nowrap" width="100%" id="analysistable">
+
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="navigation2">
+            <form class="form-horizontal">
+              <span id="navigation2_form_span" style="color:red;">*Fields are mandatory</span>
+              <div class="form-group">
+                <label for="unameinput_navigation2" class="col-sm-3 control-label">Employee name<sup style="color:red;">*</sup></label>
+                <div class="col-sm-3">
+                  <select class="form-control" id="unameinput_navigation2" ng-model="employ_name">
+                   <option>- Select Employee -</option>
+                   <option>All</option>
+                   <option ng-repeat='emp in employname'>{{emp.emp_name}}</option>
+                 </select>
+               </div>
+             </div>
+             <div class="form-group">
+              <label for="startdateinput_navigation2" class="col-sm-3 control-label" >Start Date<sup style="color:red;">*</sup></label>
+              <div class="col-sm-3">
+                <input type="date" class="form-control" id="startdateinput_navigation2" ng-model="startdate">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="enddateinput_navigation2" class="col-sm-3 control-label">End Date<sup style="color:red;">*</sup></label>
+              <div class="col-sm-3">
+                <input type="date" class="form-control" id="enddateinput_navigation2" ng-model="enddate">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-3">
+                <button type="submit" class="btn btn-default" id="submit_navigation2" ng-click="two_date(startdate,enddate)">Submit</button>
+
+              </div>
+            </div>
+          </form>
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered dt-responsive nowrap" width="100%" id="analysis_date">
+
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="navigation3">
+
+
+          <form class="form-horizontal">
+
+            <span id="navigation3_form_span" style="color:red;">*Fields are mandatory</span>
+            <div class="form-group">
+              <label for="unameinput_navigation3" class="col-sm-3 control-label">Employee name<sup style="color:red;">*</sup></label>
+              <div class="col-sm-3">
+                <select class="form-control" id="unameinput_navigation3" ng-model="employ_nm" ng-change="exp_status()">
+                  <option>- Select Employee -</option>
+                  <option>All</option>
+                  <option ng-repeat='emp in employname'>{{emp.emp_name}}</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="TotalExpense_navigation3" class="col-sm-3 control-label">Total Expense</label>
+              <div class="col-sm-3">
+                <label id="TotalExpense_navigation3" ng-model="totalexp">{{totalexp}}</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Reimbursed_Amount_navigation3" class="col-sm-3 control-label">Reimbursed Amount</label>
+              <div class="col-sm-3">
+                <label id="Reimbursed_Amount_navigation3" ng-model="reimbursedexp">{{reimbursedexp}}</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Remaining_Amount_navigation3" class="col-sm-3 control-label">Rejected Amount</label>
+              <div class="col-sm-3">  
+                <label id="Remaining_Amount_navigation3" ng-model="rejectedexp">{{rejectedexp}}</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pending_Amount_navigation3" class="col-sm-3 control-label">Pending Amount</label>
+              <div class="col-sm-3">  
+                <label id="pending_Amount_navigation3" ng-model="pendingexp">{{pendingexp}}</label>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="tab-pane fade" id="navigation4">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-3">
+                <span id="navigation4_form_span" style="color:red;">*Fields are mandatory</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="unameinput_navigation4" class="col-sm-3 control-label">Employee name<sup style="color:red;">*</sup></label>
+              <div class="col-sm-3">
+                <select class="form-control" id="unameinput_navigation4" ng-model="nav4_employ_nm" >
+                  <option>- Select Employee -</option>
+                  <option>All</option>
+                  <option ng-repeat='emp in employname'>{{emp.emp_name}}</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="categoryinput_navigation4" class="col-sm-3 control-label">Category<sup style="color:red;">*</sup></label>
+              <div class="col-sm-3">
+                <select class="form-control" id="categoryinput_navigation4" ng-model="nav4_category">
+                 <option>- Select Category -</option>
+                 <option>Air Travel Expense</option>
+                 <option>Automobile Travel Expense</option>
+                 <option>Lodging Expense</option>
+                 <option>Food Expense</option>
+                 <option>Mobile Expense</option>
+                 <option>Other</option>
+
+               </select>
+             </div>
+           </div>
+           <div class="form-group">
+            <label for="monthinput_navigaion4" class="col-sm-3 control-label">Month</label>
+            <div class="col-sm-3">
+              <select class="form-control" id="monthinput_navigation4" ng-model="nav4_month">
+                <option>- Select Month -</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="yearinput_navigation4" class="col-sm-3 control-label">Year</label>
+            <div class="col-sm-3">
+              <select class="form-control" id="yearinput_navigation4" ng-model="nav4_year">
+                <option>- Select Year -</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-3">
+              <button type="submit" class="btn btn-default" id="submit_navigation4" ng-click="Category_wise()">Submit</button>
+
+            </div>
+          </div>
+        </form>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered dt-responsive nowrap" width="100%" id="analysis_category">
+
+          </table>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="tab-pane fade" id="Cash" ng-controller="cashCtrl" >
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-horizontal">
+        <span id="cash_form_span" style="color:red;">Fields with * are mandatory</span>
+        <div class="form-group">
+          <label for="Available_balance_amount" class="col-sm-2 control-label" >Available Balance</label>
+          <div class="col-sm-3">
+            <label id="Available_balance_amount"  ng-model="avilable_cash" class="control-label">{{avilable_cash}}</label>
+          </div>
+        </div>
+
+      <!--<div class="form-group">
+        <label for="unameintput_cash" class="col-sm-2 control-label">Name<sup style="color:red;">*</sup></label>
+        <div class="col-sm-3">
+              <select class="form-control" id="unameinput_cash" ng-model="cashflow.employ_name">
+                <option>- Select Employee -</option>
+                    <option ng-repeat='emp in employname'>{{emp.emp_name}}</option>
+              </select>
+            </div>
+      </div>
+      <div class="form-group">
+        <label for="amountinput_cash" class="col-sm-2 control-label">Amount<sup style="color:red;">*</sup></label>
+        <div class="col-sm-3">
+        <input type="Number" class="form-control" id="amountinput_cash" value="00" ng-model="cashflow.amt">
+      </div>
+    </div>-->
+    <div class="form-group">
+      <div class="col-sm-3">
+        <button type="submit" class="btn" id="add_amount" ng-click="exp_status()"><a href="#add_amount_tab" data-toggle="tab">Add</a></button>
+        <button type="submit" class="btn" id="deduct_amount" ng-click="exp_status()"><a href="#deduct_amount_tab" data-toggle="tab">Deduct</a></button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="tab-content">
+    <div class="tab-pane fade" id="add_amount_tab">
+     <div class="form-horizontal">
+       <div class="form-group">
+        <label for="unameintput_cash" class="col-sm-2 control-label">Name<sup style="color:red;">*</sup></label>
+        <div class="col-sm-3">
+          <select class="form-control" id="unameinput_cash" ng-model="cashflow.employ_name">
+            <option>- Select Employee -</option>
+            <option>Dilip</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="dateinput_cash" class="col-sm-2 control-label">Date<sup style="color:red;">*</sup></label>
+        <div class="col-sm-3">
+          <input type="date" class="form-control" id="dateinput_cash" ng-model="cashflow.date">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="amountinput_receivedcash" class="col-sm-2 control-label">Amount<sup style="color:red;">*</sup></label>
+        <div class="col-sm-3">
+          <input type="Number" class="form-control" id="amountinput_receivedcash" ng-model="cashflow.Received_cash">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="purpose_cash" class="col-sm-2 control-label">Particulars</label>
+        <div class="col-sm-3">
+          <textarea class="form-control " id="purpose_cash" placeholder="Maximum 100 characters" row="3" ng-model="cashflow.Particulars"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="purpose_cash" class="col-sm-2 control-label">Remarks</label>
+        <div class="col-sm-3">
+          <textarea class="form-control " id="description_cash" placeholder="Maximum 100 characters" row="3" ng-model="cashflow.Remarks"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-3">
+          <button type="submit" class="btn btn-success" id="add_amount_submit" >Submit</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="deduct_amount_tab">
+    <div class="form-horizontal">
+      <div class="form-group">
+        <label for="unameintput_cash" class="col-sm-2 control-label">Name<sup style="color:red;">*</sup></label>
+        <div class="col-sm-3">
+          <select class="form-control" id="unameinput_cash" ng-model="cashflow.employ_name">
+            <option>- Select Employee -</option>
+            <option ng-repeat='emp in employname'>{{emp.emp_name}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="dateinput_cash" class="col-sm-2 control-label">Date<sup style="color:red;">*</sup></label>
+        <div class="col-sm-3">
+          <input type="date" class="form-control" id="dateinput_cash" ng-model="cashflow.date">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="amountinput_Expcash" class="col-sm-2 control-label">Amount<sup style="color:red;">*</sup></label>
+        <div class="col-sm-3">
+          <input type="Number" class="form-control" id="amountinput_Expcash" ng-model="cashflow.Exp_amt">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="amountinput_bill" class="col-sm-2 control-label">Bill/Invoice No.<sup style="color:red;">*</sup></label>
+        <div class="col-sm-3">
+          <input type="Text" class="form-control" id="amountinput_bill" ng-model="cashflow.Bill_invoiceNo">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="purpose_cash" class="col-sm-2 control-label">Particulars</label>
+        <div class="col-sm-3">
+          <textarea class="form-control " id="description_cash" placeholder="Maximum 100 characters" row="3" ng-model="cashflow.Particulars"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="purpose_cash" class="col-sm-2 control-label">Remarks</label>
+        <div class="col-sm-3">
+          <textarea class="form-control " id="description_cash" placeholder="Maximum 100 characters" row="3" ng-model="cashflow.Remarks"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-3">
+          <button type="submit" class="btn btn-success" id="deduct_amount_submit" width="100%">Submit</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="table-responsive">
+
+  <table class="table table-striped table-bordered dt-responsive nowrap" width="100%" id="cash_data">
+
+  </table>
+</div>
+
+<div class="modal fade" id="confirmation_add" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Confirmation</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure that you want to add this amount?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="confirmation_add_ok" ng-click="add_amt()">Yes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" >No</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+<div class="modal fade" id="confirmation_deduct" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Confirmation</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure that you want to delete this amount?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="confirmation_deduct_ok" ng-click="deduct_amt()">Yes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="row third" >
+  <div class="col-sm-12" style="padding:0px;">
+    <div id="footer">
+      Copyright © 2016 Wishtree Technologies LLP. All rights reserved
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+
+</html>

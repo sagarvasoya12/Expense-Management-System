@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+  
+
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="870750380536-i202cjqc1v7hhskd6lpn0d2hkpg452af.apps.googleusercontent.com">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style_index.css" type="text/stylesheet"/>
+  
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.cookie/1.3.1/jquery.cookie.js"></script>
+ <script type="text/javascript">
+  function onLoad() {
+      gapi.load('auth2', function() {
+        gapi.auth2.init();
+      });
+    }
+ </script>
+  <script type="text/javascript">
+  function onSignIn(googleUser) {
+              // Useful data for your client-side scripts:
+
+              var profile = googleUser.getBasicProfile();
+
+
+              
+              var str = profile.getEmail();
+              var n = str.search("wishtreetech");
+
+
+
+
+              if (n > 0) {
+                var Uname=profile.getName();
+                document.getElementById("demo").innerHTML = Uname;
+
+
+                $.cookie("username",profile.getName());
+                sessionStorage.setItem("infor1", profile.getName());
+
+                window.location.href = "/home";
+
+
+             //      window.location="http://localhost:2500/Reportform.html";
+           }
+           else {
+            document.getElementById("demo").innerHTML = "invalid user";
+          
+
+          var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+     // alert('Invalid User');
+    });
+
+window.location.href  = "http://localhost:3000/";
+        }
+        
+
+
+          
+              console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+              console.log("Name: " + profile.getName());
+              console.log("Image URL: " + profile.getImageUrl());
+              console.log("Email: " + profile.getEmail());
+              
+              
+
+
+
+              // The ID token you need to pass to your backend:
+              var id_token = googleUser.getAuthResponse().id_token;
+              console.log("ID Token: " + id_token);
+            };
+
+            function signOut() {
+
+     document.getElementById("demo").innerHTML = "";
+     console.log('User signed out.');
+
+     
+   }
+            </script>
+
+
+          </head>
+          <body   >
+           <div class="container-fluid">
+             <div class="row first">
+              <div class="col-sm-12" style="text-align:center;">
+                <img src="images/wtlogo.png" class="img-rounded" height="auto" width="auto"  alt="wishtree" ></img>
+
+              </div> 
+            </div>
+            <div class="row second">
+              <div class="col-sm-12">
+                <div class="panel panel-default box">
+                  <div class="panel-heading">
+                    <h1 class="panel-title">Log in using Wishtree Google Apps ID</h1>
+                  </div>
+                  <div class="panel-body">
+                    <div class="g-signin2 " style="margin-left:30%;margin-top:10%;" id="login" data-onsuccess="onSignIn"  data-theme="dark" ></div>
+                    <!--<a type="button" class="btn btn-primary"  target="myIFrame"  onclick="myIFrame.location='https://www.google.com/accounts/Logout';signOut();">Sign Out </a>-->
+                    <iframe name='myIFrame' id="myIFrame" src="https://www.google.com/accounts/Logout" style='display:none'></iframe> 
+                    <p id="demo"></p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row third" >
+                <div class="col-sm-12" style="padding:0px;">
+                  <div id="footer">
+                    Copyright © 2016 Wishtree Technologies LLP. All rights reserved
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+ </body>
+ <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+ </html>

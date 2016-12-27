@@ -1,0 +1,133 @@
+a{
+	text-decoration: none !important;
+}
+.container-fluid{
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+}
+.first_row_column{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.alert{
+	display: none;
+}
+.row{
+	padding: 5px;
+	margin: 0px;
+}
+[class*="col-sm-"]{
+}
+#footer{
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: antiquewhite;
+    background-color : dimgrey;
+}
+.table_input{
+	background-color:transparent;
+	border: 0px solid;
+}
+.first{
+	background-color: rgba(60,141,188,0.95);
+	height: 15%;
+}
+.second{
+	height: 100%;
+	padding: 0px;
+}
+.third{
+	height: 5%;
+	padding: 0px;
+}
+#display{
+	padding : 15px;
+	height: 100%;
+}
+.vertical-nav{
+	padding : 0px;
+	height: 100%;
+	background: rgba(0,0,0,0.85);
+}
+h1{
+	margin : auto;
+	color: #fff;
+}
+#Title_tab{
+	text-align: center;
+	color: grey;
+}
+@media screen and (max-width: 767px) {
+	.first{
+		height: auto;
+	}
+	.second{
+		height: auto;
+	}
+	.third{
+		height: auto;
+	}
+	.first_row_column{
+		transform : initial; 
+	}
+	.profile_column{
+		float: right
+	}
+}
+ul.nav li{
+	background-size: cover;
+}
+ul.nav li a{
+	color : grey;
+	text-align : center;
+}
+img{
+	max-height:100%;
+	max-width:100%;
+	margin: auto;
+}
+#profile_button{
+	background-color: #3c8dbc;
+	color: #fff;
+}
+.table-responsive{
+	margin: auto;
+}
+.table{
+	
+}
+thead tr th{
+text-align : center;
+	
+}
+tbody tr td{
+	color : black;
+}
+td{
+
+	text-align : center;
+}
+
+button{
+	margin : auto;
+}
+.add{
+	float: left;
+}
+.add_div{
+	margin: 10px 0px;
+}
+label{
+	text-align: center !important;
+}
+.inner{
+	width: 25%;
+	border: 1px solid black;
+}
+.head{
+	border: 0px;
+}
